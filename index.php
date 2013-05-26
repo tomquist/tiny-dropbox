@@ -1538,8 +1538,66 @@ IAF_SIZE_FAILURE          Failed: size too big (must be <= MAX_FILE_SIZE).
 IAF_PROGRESS              BYTES_LOADED / BYTES_TOTAL
 LANG;
 
+    $de = <<<LANG
+LANGUAGE                  Deutsch
+FOOTER                    Entwickelt von <a href="http://bugpipe.org/">Einar Lielmanis</a>, <a href="http://inaflashuploader.com">In-A-Flash</a> upload widget, Design und Bilder von <a href="http://www.colourlovers.com/lover/doc%20w">doc w</a>.
+CHANGE_SETTINGS           Einstellungen ändern
+OWNER_TITLE               owner mode
+OWNER_LOGIN               Owner mode
+OWNER_LOGOUT              Ausloggen
+LOGIN_BLOCKED             Zu viele versuche: Der login wird vorrübergehend gesperrt.
+WRONG_PASSWORD            Das Passwort ist falsch.
+LABEL_PASSWORD            Passwort:
+BUTTON_LOGIN              Anmelden
+SUCCESS_SINGLE            Der Upload der Datei war erfolgreich.
+SUCCESS_MULTIPLE          Der Upload aller Dateien war erfolgreich.
+LINK_ADD_MORE             Willst du noch eine Datei hinzufügen?
+LINK_OWNER_UPLOAD         Willst du eine Datei hochladen?
+UPLOAD_LIMIT              %d MB Limit
+UPLOAD_YOUR_FILE          <strong>Datei</strong> hochladen:
+LABEL_DESCRIPTION         Kurze Beschreibung:
+BUTTON_UPLOAD             <strong>Datei</strong> hochladne und verschicken
+NO_FILES                  Es wurde keine Datei hochgeladen.
+LINK_EDIT_DESCRIPTION     Beschreibung bearbeiten
+LINK_ADD_DESCRIPTION      Beschreibung hinzufügen
+LINK_ERASE                löschen
+BUTTON_SAVE_EDIT          Beschreibung speichern
+ERR_MISSING_STORAGE       Das Daten-Verzeichnis existiert nicht und konnte nicht erstellt werden. Erstelle ein Verzeichnis <strong>«%s»</strong> sorge dafür, dass der Webserver darauf schreiben kann.
+ERR_READONLY_STORAGE      In das Daten-Verzeichnis <strong>«%s»</strong> kann nicht geschrieben werden. Gib dem Webserver schreibrechte dafür!
+ERR_WRITE_FAILED          Die Datei <strong>«%s»</strong> konnte nicht geschrieben werden. Übreprüfe die Verzeichnis-Berechtigungen.
+ERR_NO_FILE               Datei nicht gefunden.
+DEFAULT_TITLE             tiny <strong>file dropbox</strong>
+DEFAULT_INTRODUCTION      Mit dieser Seite kannst du mir ganz einfach verschiedene Dateien schicken.
+LABEL_CFG_PASSWORD        Neues Passwort:
+LABEL_CFG_TITLE           Titel der Seite:
+LABEL_CFG_INTRODUCTION    Beschreibung der Seite:
+LABEL_CFG_LANGUAGE        Sprache:
+LABEL_CFG_STORAGE_LIMIT   Speicher Limit, MB:
+LABEL_CFG_CUSTOM_CSS      CSS Anpassungen:
+LABEL_STOCK_INPUT         Datei ohne Flash hochladen
+HINT_CFG_CUSTOM_CSS       CSS ist eine Technologie, die es ermöglicht, das Aussehen der Seite zu verändern.<br />Zum Beispiel kann mit "body { background: red }" die Hintergrundfarbe der Seite auf rot geändert werden.
+HINT_CFG_STORAGE_LIMIT    Maximale Speicherkapazität in Megabyte, die die hochgeladenen Dateien nutzen dürfen.<br />Aktuell wird <strong>%.1f MB</strong> genutzt.
+BUTTON_CONFIG_SAVE        Änderungen speichern
+ERR_NO_UPLOAD             Es wurde keine Datei ausgewählt.
+ERR_TOO_BIG               Beim Hochladen der Datei ist ein <strong>Fehler</strong> aufgetreten. Möglicherweise ist die Datei zu groß.
+ERR_BAD_UPLOAD            Beim Hochladen ist ein <strong>Fehler</strong> aufgetreten.
+ERR_CANNOT_MOVE           Die hochgeladene Datei konnte nicht nach <strong>%s</strong> verschoben werden.
+ERR_DUPLICATE             Diese Datei <strong>wurde bereits hochgeladen</strong>. Danke!
+ERR_EMPTY                 Die hochgeladene Datei ist leer.
+ERR_STORAGE_EXCEEDED      Leider ist die Speicherkapazität erschöpft.
+IAF_CLICK                 Hier klicken um eine Datei hochzuladen.
+IAF_UPLOADING             Datei wird hochgeladen
+IAF_COMPLETE              Date wurde vollständig hochgeladen.
+IAF_PENDING               Datei wird verarbeitet...
+IAF_MAX                   Maximale Anzahl an Dateien erreicht!
+IAF_VALID                 Gültige Datei
+IAF_SIZE_FAILURE          Fehler: Datei ist zu groß
+IAF_PROGRESS              BYTES_LOADED / BYTES_TOTAL
+LANG;
+
     add_language('lv', $lv);
     add_language('en', $en);
+    add_language('de', $de);
 }
 
 
